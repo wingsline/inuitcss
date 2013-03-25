@@ -1,6 +1,7 @@
 {
     "name": "wingsline/inuitcss",
-    "description": "",
+    "description": "inuit.css helpers and pagination for Laravel 4",
+    "license": "MIT",
     "authors": [
         {
             "name": "Arpad Olasz",
