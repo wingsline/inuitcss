@@ -11,8 +11,6 @@
 
 ### Installation
 
-You can install with composer:
-
 Wingsline/inuitcss is available on Packagist ([wingsline/inuitcss](http://packagist.org/packages/wingsline/inuitcss))
 and as such installable via [Composer](http://getcomposer.org/).
 
@@ -70,6 +68,26 @@ Just the basic previous and next links.
 
 ![simpleslider](http://inuitcss.wingsline.net/img/simple.png "slider")
 
+
+### Language
+
+The language keys for the pagination (```app/lang/en/pagination.php```) should look similar to this:
+
+	<?php 
+
+	return array(
+	
+		'previous' => '&lsaquo; Previous',
+
+	    'next'     => 'Next &rsaquo;',
+
+	    'first'    => 'First',
+
+	    'last'     => 'Last',
+	    
+    );
+    
+ 
 
 ### License
 
