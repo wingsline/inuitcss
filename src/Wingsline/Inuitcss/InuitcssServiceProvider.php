@@ -28,7 +28,12 @@ class InuitcssServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		//
+		$this->app['inuitcssform'] = $this->app->share(function($app)
+		{
+			$form = new Html\FormBuilder($app['html'], $app['url'], $app['session']->getToken());
+
+			return $form->setSessionStore($app['session']);
+		});
 	}
 
 	/**

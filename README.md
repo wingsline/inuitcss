@@ -1,6 +1,6 @@
 ## Wingsline/inuitcss
 
-[inuit.css](http://inuitcss.com/) helpers and pagination for [Laravel 4](http://laravel.com)
+[inuit.css](http://inuitcss.com/) html, form helpers and pagination for [Laravel 4](http://laravel.com)
 
 
 ### Requirements
@@ -18,7 +18,35 @@ If you do not use Composer, you can grab the code from GitHub, and use any
 PSR-0 compatible autoloader (e.g. the [Symfony2 ClassLoader component](https://github.com/symfony/ClassLoader))
 to load Wingsline/Inuitcss classes.
 
-### Usage
+
+### Form elements
+
+In order to use inuitcss styled form elements replace the following alias in the app/config/app.php:
+
+	'Form'            => 'Illuminate\Support\Facades\Form'
+	
+with
+
+	'Form'            => 'Wingsline\Inuitcss\Facades\Form'
+	
+	
+So when in example you call Form::text() a text field will be generated, BUT the text field will have the
+```text-input``` class added to it automatically.
+
+Currently the following elements will have the text-input added to it: 
+
+- Form::text()
+- Form::password()
+- Form::email()
+- Form::textarea()
+
+Also there is a Form::extraHelp() available to add help text displayed after a field when that field is in focus (see [forms](http://jsfiddle.net/inuitcss/MhHHU/)):
+
+	Form::extraHelp('.edu emails only')
+	
+
+
+### Pagination
 
 After installation add the Wingsline/InuitcssServiceProvider to the config/app.php's service providers:
 	
