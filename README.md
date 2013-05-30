@@ -61,7 +61,7 @@ then change the config/view.php `pagination` value to one of the following views
 
 Show the most links with text labels
 
- 	'pagination' => 'inuitcss::pagination.slidernotext'
+ 	'pagination' => 'inuitcss::pagination.slider'
  		
 
 ![slider](http://inuitcss.wingsline.net/img/slider.png "slider")
