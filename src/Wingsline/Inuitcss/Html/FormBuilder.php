@@ -4,7 +4,8 @@ use Illuminate\Routing\UrlGenerator;
 use Illuminate\Html\HtmlBuilder as Html;
 use Illuminate\Session\Store as Session;
 
-class FormBuilder extends \Illuminate\Html\FormBuilder {
+class FormBuilder extends \Illuminate\Html\FormBuilder
+{
 
     /**
      * Class name for text style input elements
@@ -47,7 +48,7 @@ class FormBuilder extends \Illuminate\Html\FormBuilder {
      */
     public function password($name, $options = array())
     {
-        return parent::password($name, '', $this->addClass($options, static::TEXT_INPUT_CLASS));
+        return parent::password($name, $this->addClass($options, static::TEXT_INPUT_CLASS));
     }
 
     /**
