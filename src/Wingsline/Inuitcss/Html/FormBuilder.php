@@ -71,9 +71,9 @@ class FormBuilder extends \Illuminate\Html\FormBuilder
      * @param  array   $options
      * @return string
      */
-    public function label($name, $value = null, array $options = array())
+    public function label($name, $value = null, $options = array())
     {
-        if ($this->validationErrors) {
+        if ($this->validationErrors && $this->validationErrors->has($name)) {
             $options = $this->addClass($options, $this->errorCssClass);
         }
         return parent::label($name, $value, $options);
