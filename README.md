@@ -45,6 +45,19 @@ Also there is a Form::extraHelp() available to add help text displayed after a f
 	Form::extraHelp('.edu emails only')
 	
 
+#### Highlight label in case of a validation error
+
+You can also highlight a label of an input element when a validation error occurs. Simply add the $errors from the view into the Form::open().
+
+	
+	Form::open(array('errors' => $errors))
+	
+	
+The default css class is `error`, but if you want to change that add the errors like this:
+
+	
+	Form::open(array('errors' => array($errors, 'mycustomclass')))
+	
 
 ### Pagination
 
