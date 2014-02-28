@@ -42,12 +42,18 @@ class FormBuilder extends \Illuminate\Html\FormBuilder
     public function open(array $options = array())
     {
         if (isset($options['errors'])) {
-            settype($options['errors'], 'array');
-            $this->setErrors($options['errors'][0]);
-            if (isset($options['errors'][1])) {
-                $this->errorCssClass = $options['errors'][1];
+            if (is_array($options['errors'])) {
+                $this->setErrors($options['errors'][0]);
+                if (isset($options['errors'][1])) {
+                    $this->errorCssClass = $options['errors'][1];
+                }
+            } else {
+                $this->setErrors($options['errors']);
             }
+
+
             unset($options['errors']);
+
         }
 
         return parent::open($options);
