@@ -122,7 +122,7 @@ class FormBuilder extends \Illuminate\Html\FormBuilder
     {
         $attributes = $this->addClass($attributes, 'additional');
         $attributes = $this->html->attributes($attributes);
-        return '<span'.$attributes.'>'.e($name).'</span>';
+        return '<span'.$attributes.'>'.e($value).'</span>';
     }
 
     /**
