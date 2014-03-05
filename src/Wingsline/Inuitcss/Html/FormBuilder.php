@@ -112,6 +112,20 @@ class FormBuilder extends \Illuminate\Html\FormBuilder
     }
 
     /**
+     * Creates .additional element for inuitcss
+     *
+     * @param $value
+     * @param array $attributes
+     * @return string
+     */
+    public function additional($value, array $attributes = array())
+    {
+        $attributes = $this->addClass($attributes, 'additional');
+        $attributes = $this->html->attributes($attributes);
+        return '<span'.$attributes.'>'.e($name).'</small>';
+    }
+
+    /**
      * Create a text input field.
      *
      * @param  string  $name
