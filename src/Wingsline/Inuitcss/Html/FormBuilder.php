@@ -13,6 +13,18 @@ class FormBuilder extends \Illuminate\Html\FormBuilder
     const TEXT_INPUT_CLASS = 'text-input';
 
     /**
+     * Constructor
+     * 
+     * @param Html $html
+     * @param UrlGenerator $url
+     * @param string $csrfToken
+     */
+    public function __construct(Html $html, UrlGenerator $url, $csrfToken)
+    {
+        parent::__construct($html, $url, $csrfToken);
+    }
+
+    /**
      * Holds the validation errors
      *
      * @var \Illuminate\Support\MessageBag
