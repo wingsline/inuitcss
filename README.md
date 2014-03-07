@@ -6,7 +6,7 @@
 ### Requirements
 
 - PHP 5.3+
-- Laravel 4
+- Laravel 4.1
 
 
 ### Installation
@@ -77,7 +77,7 @@ Show the most links with text labels
  	'pagination' => 'inuitcss::pagination.slider'
  		
 
-![slider](http://inuitcss.wingsline.net/img/slider.png "slider")
+![slider](https://dl.dropboxusercontent.com/s/fpkhx4d61na00eb/slider.png?dl=1&token_hash=AAFxt1xUEg-0q18nwFf7rDdVjBi8UExPdX-WV0seZycQGQ "slider")
 
 
 #### simpleslider:
@@ -87,7 +87,7 @@ Shows the slider pagination except the first and last page links
 	'pagination' => 'inuitcss::pagination.simpleslider'
 
 
-![simpleslider](http://inuitcss.wingsline.net/img/simpleslider.png "simpleslider")
+![simpleslider](https://dl.dropboxusercontent.com/s/bd1qvwmmr1q1k9o/simpleslider.png?dl=1&token_hash=AAG5esM_uAbjE2JpXGG7FtB-DLR8SfpyQpTZ0or0G6xS8w "simpleslider")
 
 
 #### slidernotext:
@@ -97,7 +97,7 @@ Shows the slider but without text labels
 	'pagination' => 'inuitcss::pagination.slidernotext'
 
 
-![slidernotext](http://inuitcss.wingsline.net/img/slidernotext.png "slidernotext")
+![slidernotext](https://dl.dropboxusercontent.com/s/4z2d6hacmw9k235/slidernotext.png?dl=1&token_hash=AAFrFAeKfbKAVKE_-63UsYjmR02_cxvlVu-xB50c1v7tTQ "slidernotext")
 
 
 #### simple
@@ -107,7 +107,7 @@ Just the basic previous and next links.
 	'pagination' => 'inuitcss::pagination.simple'
 
 
-![simpleslider](http://inuitcss.wingsline.net/img/simple.png "slider")
+![simpleslider](https://dl.dropboxusercontent.com/s/hdahh1x0w3mrtk3/simple.png?dl=1&token_hash=AAE5ipqbHZPOZpQaK-Of-H4hr9yuatYxV_TwztsMuQekiA "slider")
 
 
 ### Language
